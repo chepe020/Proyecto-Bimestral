@@ -47,8 +47,8 @@ export const soloCliente = async (req, res, next) => {
     try {
         const authenticatedUserClient = req.user.role;
 
-        if (authenticatedUserClient !== "CLIENT_ROLE") {
-            return res.status(403).rol({
+        if (authenticatedUserClient !== "CLIENTE_ROLE") {
+            return res.status(403).json({
                 success: false,
                 msg: "Solo el cliente tiene acceso",
                 error: error.message || error 

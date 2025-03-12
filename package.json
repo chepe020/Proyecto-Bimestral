@@ -1,5 +1,5 @@
 {
-  "name": "proyectos-in6cm",
+  "name": "proyecto",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -24,7 +24,7 @@
     "mongoose": "^8.9.5",
     "morgan": "^1.10.0",
     "multer": "^1.4.5-lts.1",
-    "proyectos-in6cm": "file:"
+    "proyecto": "file:"
   },
   "type": "module",
   "devDependencies": {

@@ -1,15 +1,16 @@
-'use strict'
+'use strict';
 
 import mongoose from "mongoose";
+import Categoria from "../src/categoria/categoria.model.js";
 
 export const dbConnection = async () => {
     try{
         mongoose.connection.on('error', ()=>{
-            console.log('MongoDB | could not be connected to MongoDB');
+            console.log('MongoDB | Could not be connected to MongoDB');
             mongoose.disconnect();
         });
         mongoose.connection.on('connecting', ()=>{
-            console.log('MongoDB | try connection');
+            console.log('MongoDB | Try connecting');
         });
         mongoose.connection.on('connected', ()=>{
             console.log('MongoDB | connected to MongoDB');
@@ -23,12 +24,30 @@ export const dbConnection = async () => {
         mongoose.connection.on('disconnected', ()=>{
             console.log('MongoDB | disconnected');
         });
-
-        await mongoose.connect(process.env.URI_MONGO,{
-            serverSelectionTimeoutMS : 5000,
+        mongoose.connect(process.env.URI_MONGO, {
+            serverSelectionTimeoutMS: 5000,
             maxPoolSize: 50,
         });
     }catch(error){
         console.log('Database connection failed', error);
+    }
+}
+
+export const createCategoria = async() => {
+    try {
+        const categoriaExists = await Categoria.findOne({name: "Condimentos"});
+
+        if(!categoriaExists){
+            const categoriaDefault = new Categoria({  // Aquí se debe usar "Categoria", no "Category"
+                name: "Condimentos"
+            });
+
+            await categoriaDefault.save();
+            console.log("Categoria creada con exito");
+        }else{
+            console.log(`Categoria ya existente`);
+        }
+    } catch (error) {
+        console.log("Error al crear la categoria", error);
     }
 }

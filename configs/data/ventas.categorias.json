@@ -1,0 +1,44 @@
+[{
+  "_id": {
+    "$oid": "67d14d241c095b3ff5f90e8f"
+  },
+  "name": "Electronics"
+},
+{
+  "_id": {
+    "$oid": "67d14d2f1c095b3ff5f90e91"
+  },
+  "name": "Clothing"
+},
+{
+  "_id": {
+    "$oid": "67d1659881d5414eab6f1506"
+  },
+  "name": "Bebidas",
+  "status": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67d165a881d5414eab6f1509"
+  },
+  "name": "Frutas",
+  "status": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67d16a681fb403959c35d293"
+  },
+  "name": "Reciclado",
+  "status": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67d16ea81fb403959c35d2a8"
+  },
+  "name": "frutas de Temporada",
+  "status": true,
+  "__v": 0
+}]

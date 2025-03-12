@@ -1,0 +1,16 @@
+[{
+  "_id": {
+    "$oid": "67d14d451c095b3ff5f90e94"
+  },
+  "user": "clientUser",
+  "products": [
+    {
+      "product": "productID1",
+      "quantity": 1
+    },
+    {
+      "product": "productID2",
+      "quantity": 2
+    }
+  ]
+}]

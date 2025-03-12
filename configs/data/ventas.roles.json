@@ -1,0 +1,21 @@
+[{
+  "_id": {
+    "$oid": "67d14c5a1c095b3ff5f90e7b"
+  },
+  "role": "ADMIN_ROLE",
+  "permissions": [
+    "create",
+    "edit",
+    "delete",
+    "view"
+  ]
+},
+{
+  "_id": {
+    "$oid": "67d14c641c095b3ff5f90e7d"
+  },
+  "role": "CLIENTE_ROLE",
+  "permissions": [
+    "view"
+  ]
+}]

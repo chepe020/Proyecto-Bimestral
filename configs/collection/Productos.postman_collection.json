@@ -1,0 +1,362 @@
+{
+	"info": {
+		"_postman_id": "33dc74ca-1444-4093-90a0-df2089532b1c",
+		"name": "Productos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37560259"
+	},
+	"item": [
+		{
+			"name": "Agregar",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2QxNWEyYzM4ZmEyOTI5ZGFjYjhlNjAiLCJpYXQiOjE3NDE3ODkyOTIsImV4cCI6MTc0MTc5Mjg5Mn0.HMjW5rHyuI5Im8_414enJwy_FhzkWl78QnH71S2NrrY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nameP\": \"Gaseosa\",\r\n    \"price\": 15,\r\n    \"description\": \"Bebida refrescante\",\r\n    \"stock\": 100,\r\n    \"category\": \"Frutas\"\r\n}\r\n\r\n    ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/Proyecto-Bimestral/v1/producto",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"Proyecto-Bimestral",
+						"v1",
+						"producto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Mostrar",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2QxNWEyYzM4ZmEyOTI5ZGFjYjhlNjAiLCJpYXQiOjE3NDE3ODkyOTIsImV4cCI6MTc0MTc5Mjg5Mn0.HMjW5rHyuI5Im8_414enJwy_FhzkWl78QnH71S2NrrY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nameP\": \"jabon\",\r\n    \"price\": 15,\r\n    \"description\": \"Lava el ropa y lava cuerpo\",\r\n    \"stock\": 100,\r\n    \"category\": \"Frutas\"\r\n}\r\n\r\n    ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/Proyecto-Bimestral/v1/producto",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"Proyecto-Bimestral",
+						"v1",
+						"producto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2QxNWEyYzM4ZmEyOTI5ZGFjYjhlNjAiLCJpYXQiOjE3NDE3ODkyOTIsImV4cCI6MTc0MTc5Mjg5Mn0.HMjW5rHyuI5Im8_414enJwy_FhzkWl78QnH71S2NrrY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nameP\": \"Pan\",\r\n    \"price\": 15,\r\n    \"description\": \"Pan suabe y dulce \",\r\n    \"stock\": 100,\r\n    \"category\": \"Frutas\"\r\n}\r\n\r\n    ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/Proyecto-Bimestral/v1/producto/:id?=67d19c4d4e9f81cf122113d2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"Proyecto-Bimestral",
+						"v1",
+						"producto",
+						":id"
+					],
+					"query": [
+						{
+							"key": null,
+							"value": "67d19c4d4e9f81cf122113d2"
+						}
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "67d19c4d4e9f81cf122113d2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2QxNWEyYzM4ZmEyOTI5ZGFjYjhlNjAiLCJpYXQiOjE3NDE3ODkyOTIsImV4cCI6MTc0MTc5Mjg5Mn0.HMjW5rHyuI5Im8_414enJwy_FhzkWl78QnH71S2NrrY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nameP\": \"jabon\",\r\n    \"price\": 15,\r\n    \"description\": \"Lava el ropa y lava cuerpo\",\r\n    \"stock\": 100,\r\n    \"category\": \"Frutas\"\r\n}\r\n\r\n    ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/Proyecto-Bimestral/v1/producto/:id?=67d19c4d4e9f81cf122113d2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"Proyecto-Bimestral",
+						"v1",
+						"producto",
+						":id"
+					],
+					"query": [
+						{
+							"key": null,
+							"value": "67d19c4d4e9f81cf122113d2"
+						}
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "67d19c4d4e9f81cf122113d2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar por Id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2QxNWEyYzM4ZmEyOTI5ZGFjYjhlNjAiLCJpYXQiOjE3NDE3ODkyOTIsImV4cCI6MTc0MTc5Mjg5Mn0.HMjW5rHyuI5Im8_414enJwy_FhzkWl78QnH71S2NrrY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nameP\": \"jabon\",\r\n    \"price\": 15,\r\n    \"description\": \"Lava el ropa y lava cuerpo\",\r\n    \"stock\": 100,\r\n    \"category\": \"Frutas\"\r\n}\r\n\r\n    ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/Proyecto-Bimestral/v1/producto/findProduct/:id?=67d19f8ec0779f10dfa34ed5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"Proyecto-Bimestral",
+						"v1",
+						"producto",
+						"findProduct",
+						":id"
+					],
+					"query": [
+						{
+							"key": null,
+							"value": "67d19f8ec0779f10dfa34ed5"
+						}
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "67d19f8ec0779f10dfa34ed5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "stock",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2QxNWEyYzM4ZmEyOTI5ZGFjYjhlNjAiLCJpYXQiOjE3NDE3ODkyOTIsImV4cCI6MTc0MTc5Mjg5Mn0.HMjW5rHyuI5Im8_414enJwy_FhzkWl78QnH71S2NrrY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nameP\": \"jabon\",\r\n    \"price\": 15,\r\n    \"description\": \"Lava el ropa y lava cuerpo\",\r\n    \"stock\": 100,\r\n    \"category\": \"Frutas\"\r\n}\r\n\r\n    ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/Proyecto-Bimestral/v1/producto/stock",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"Proyecto-Bimestral",
+						"v1",
+						"producto",
+						"stock"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BuscaPorNombre",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2QxNWEyYzM4ZmEyOTI5ZGFjYjhlNjAiLCJpYXQiOjE3NDE3ODkyOTIsImV4cCI6MTc0MTc5Mjg5Mn0.HMjW5rHyuI5Im8_414enJwy_FhzkWl78QnH71S2NrrY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/Proyecto-Bimestral/v1/producto/buscar?nameP=jabon",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"Proyecto-Bimestral",
+						"v1",
+						"producto",
+						"buscar"
+					],
+					"query": [
+						{
+							"key": "nameP",
+							"value": "jabon"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ventas",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2QxNWEyYzM4ZmEyOTI5ZGFjYjhlNjAiLCJpYXQiOjE3NDE3ODkyOTIsImV4cCI6MTc0MTc5Mjg5Mn0.HMjW5rHyuI5Im8_414enJwy_FhzkWl78QnH71S2NrrY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/Proyecto-Bimestral/v1/producto/ventas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"Proyecto-Bimestral",
+						"v1",
+						"producto",
+						"ventas"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

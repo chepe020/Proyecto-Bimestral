@@ -1,0 +1,46 @@
+{
+	"info": {
+		"_postman_id": "13df0fc3-a3f8-4a98-853b-ea47ae6cd8c5",
+		"name": "Carritos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37560259"
+	},
+	"item": [
+		{
+			"name": "Agregar",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2QxNWEyYzM4ZmEyOTI5ZGFjYjhlNjAiLCJpYXQiOjE3NDE3OTcyNDEsImV4cCI6MTc0MTgwMDg0MX0.Cu3lzWQfiFAxU4QeuvpX9i3v7zC33jQACnpWI8R5QQY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Carlos\",\r\n    \"products\": [\r\n        {\r\n            \"nameP\": \"Pan\",\r\n            \"quantity\": 2\r\n        }\r\n    ]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/Proyecto-Bimestral/v1/carrito",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"Proyecto-Bimestral",
+						"v1",
+						"carrito"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

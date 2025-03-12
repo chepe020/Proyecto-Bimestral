@@ -1,0 +1,78 @@
+[{
+  "_id": {
+    "$oid": "67d14caa1c095b3ff5f90e83"
+  },
+  "nameP": "Laptop",
+  "price": 1000,
+  "stock": 50,
+  "category": "Electronics"
+},
+{
+  "_id": {
+    "$oid": "67d14cb61c095b3ff5f90e85"
+  },
+  "nameP": "Smartphone",
+  "price": 500,
+  "stock": 100,
+  "category": "Electronics"
+},
+{
+  "_id": {
+    "$oid": "67d19bdb4e9f81cf122113ca"
+  },
+  "nameP": "jabon",
+  "price": 15,
+  "description": "Lava el ropa y lava cuerpo",
+  "stock": 100,
+  "sold": 0,
+  "category": {
+    "$oid": "67d165a881d5414eab6f1509"
+  },
+  "status": true,
+  "createdAt": {
+    "$date": "2025-03-12T14:36:11.366Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-12T14:36:11.366Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67d19c4d4e9f81cf122113d2"
+  },
+  "nameP": "Pan",
+  "price": 15,
+  "description": "Pan suabe y dulce",
+  "stock": 100,
+  "sold": 0,
+  "category": {
+    "$oid": "67d165a881d5414eab6f1509"
+  },
+  "status": false,
+  "createdAt": {
+    "$date": "2025-03-12T14:38:05.446Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-12T14:48:16.651Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67d19f8ec0779f10dfa34ed5"
+  },
+  "nameP": "Gaseosa",
+  "price": 15,
+  "description": "Bebida refrescante",
+  "stock": 100,
+  "sold": 0,
+  "category": {
+    "$oid": "67d165a881d5414eab6f1509"
+  },
+  "status": true,
+  "createdAt": {
+    "$date": "2025-03-12T14:51:58.009Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-12T14:51:58.009Z"
+  }
+}]
